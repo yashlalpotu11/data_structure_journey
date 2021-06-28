@@ -2,65 +2,40 @@
 using namespace std;
 const int m = 1e9+7;
 typedef long long int ll;
- 
-unordered_set<string> st;
-void subseq(string s){
-    for (int i = 0; i < s.length(); i++)
-        {
-            for (int j = s.length(); j > i; j--)
-                {
-                    string str = s.substr(i, j);
-                    st.insert(str);
-            
-                    for (int k = 1; k < str.length() - 1; k++)
-                    {
-                        string sb = str;
-                        sb.erase(sb.begin() + k);
-                        subseq(sb);
-                    }
+
+int main(){
+    int n; cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++){
+        int num; cin>>num;
+        v.push_back(num);
+    }
+    int len = v.size();
+    if(len<3){
+        cout<<-1<<endl;
+        return 0;
+    }
+    if(len==3){
+        // if((v[0]<v[1] and v[2]<v[1] and ) or v[0]>v[1] and v[2]>v[1]){
+        //     cout<<-1<<endl;
+        // }
+        if(v[0]==v[2] and v[1]>=v[2]){
+            cout<<-1<<endl;
+        }
+        else if(v[0]==v[1]){
+            cout<<2<<" "<<3<<endl;
+        }
+        else if(v[1]==v[2]){
+            cout<<1<<" "<<2<<endl;
+        }
+        return 0;
+    }
+    for(int i=0;i<v.size()-1;i++){
+        // if(check==v[i]) cnt++;
+        if(v[i]<v[i+1] or v[i]>v[i+1]){
+            cout<<i+1<<" "<<i+2<<endl;
+            return 0;
         }
     }
-}
-int main(){
-    // int t; cin>>t;
-    // while(t--){
-        int m,x; cin>>m>>x;
-        string s = "0123456789";
- 
-        bool flag = 0;
-        int ans;
-        subseq(s);
-         vector<int>v;
-         for(auto it : st){
-             int num = stoi(it);
-             v.push_back(num);
-         }
-         sort(v.begin(), v.end());
-        for(int i=0;i<v.size();i++){
-            int sum = 0;
-            int temp = v[i];
-            while(temp>0){
-                sum+=temp%10;
-                temp/=10;
-            }
-            int dig1 = int(log10(sum) + 1);
-            // int dig2 = int(log10(x) + 1);;
-            if(sum==x and dig1==m){
-                ans = v[i];
-                flag = 1;
-                break;
-                // v1.push_back(v[i]);
-            }
-            // cout<<v[i]<<" ";
-        }
-        string a = to_string(ans);
-        reverse(a.begin(), a.end());
-        if(flag){
-            // cout<<mini<<" "<<maxi<<endl;
-            cout<<ans<<" "<<a<<endl;
-        }
-        else{
-            cout<<-1<<" "<<-1<<endl;
-        }
-    //}
+    cout<<-1<<endl;
 }
