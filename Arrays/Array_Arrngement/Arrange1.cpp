@@ -22,7 +22,7 @@ typedef long long int ll;
 void FixArray(int arr[], int n){
     //initialise hashmap
     unordered_map<int, int>hmap;
-
+    
     //store each element in hashmap
     for(int i = 0; i < n; i++){
         if(arr[i] != -1){
