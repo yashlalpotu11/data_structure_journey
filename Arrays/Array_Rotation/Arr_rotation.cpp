@@ -1,20 +1,20 @@
 
-// Q) Write a function rotate(ar[], d, n) that 
-//rotates arr[] of size n by d elements. 
+/* Q) Write a function rotate(ar[], d, n) that 
+rotates arr[] of size n by d elements. 
 
-// Input : arr[] = [1,2,3,4,5], d = 2, n = 7;
-//Output = arr[] = [3,4,5,1,2]
+Input : arr[] = [1,2,3,4,5], d = 2, n = 7;
+Output = arr[] = [3,4,5,1,2]
 
 
-//METHOD 1 => Using Temp array[]
+METHOD 1 => Using Temp array[]
 
-//Algorithm => Step 1) store the first d element in temp array
-            //    Step 2) shift rest of original array
-            //    Step 3) store back d elements  
+Algorithm => Step 1) store the first d element in temp array
+               Step 2) shift rest of original array
+               Step 3) store back d elements  
             
-            //Time complexity = O(n)
-            //Spce complexity = O(d)
-
+            Time complexity = O(n)
+            Spce complexity = O(d)
+*/
 
 //Method 2 => Rotate one-by-one
 
