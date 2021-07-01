@@ -26,5 +26,12 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
 
     cout<<maxElement(arr,n);
-
 }
+//Time complexity = O(n)
+
+/* Method 2) using in-built function (vector)
+
+    lets vector = v;
+
+    max_ele = *max_element(v.begin(), v.end());
+*/
