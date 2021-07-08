@@ -24,7 +24,7 @@ int compare(string X, string Y){
     return XY.compare(YX) ? 1 : 0;
 }
 
-void printArr(vector<string>v){
+void printArray(vector<string>v){
     
     sort(v.begin(), v.end(), compare);
 
@@ -38,12 +38,12 @@ int main(){
     v.push_back("546");
     v.push_back("548");
     v.push_back("60");
-    printArr(v);
+    printArray(v);
 }
 
 /*
 Time Complexity:  O(nlogn) ,sorting is considered to have running
 time complexity of O(nlogn) and the for loop runs in O(n) time.
 
-Auxiliary Space: O(1).
+Auxiliary Space: O(1)
 */
