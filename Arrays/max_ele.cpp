@@ -29,7 +29,7 @@ int main(){
 }
 //Time complexity = O(n)
 
-/* Method 2) using in-built function (vector)
+/* Method 2) using in-built function (vector) (recommended)
 
     lets vector = v;
 
