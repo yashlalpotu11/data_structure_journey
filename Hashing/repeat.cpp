@@ -38,3 +38,5 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<findRepeat(arr, n);
 }
+
+//Time complexity : O(n)
