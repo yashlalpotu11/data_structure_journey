@@ -42,3 +42,8 @@ int main(){
     string s = "The quick brown fox jumps over the dog";
     cout<<missingChar(s);
 }
+
+/*
+Time Complexity: O(n) 
+Auxiliary Space: O(1)
+*/
