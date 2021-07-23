@@ -15,6 +15,7 @@ The idea is very simple. We scan each character of the input
 string and if a number is formed by consecutive characters of 
 the string, we increment the result by that amount. 
 */
+//atoi = character to integer
 
 #include<bits/stdc++.h>
 using namespace std;
