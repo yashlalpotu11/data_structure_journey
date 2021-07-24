@@ -27,7 +27,7 @@ int findSum(string s){
     //temporary string
     string temp = "";
 
-    //hold sum
+    //hold sum of integer
     int sum = 0;
 
     for(char ch : s){
