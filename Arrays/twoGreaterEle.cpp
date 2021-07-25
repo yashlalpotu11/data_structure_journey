@@ -31,7 +31,7 @@ void twoGreaterEle(int arr[], int n){
             second = arr[i];
         }
     }
-    
+
     //print elements
     for(int i = 0; i < n; i++){
         if(arr[i] < second){
