@@ -23,7 +23,7 @@ int main(){
     for(ll i=1; i<=sqrt(num);i++){
         if(isPrime(i) and num%i==0){
             flag = 1;
-            int temp=i;
+            int temp = i;
             max_pri = max(max_pri, temp);
         }
     } 
