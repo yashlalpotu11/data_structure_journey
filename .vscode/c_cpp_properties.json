@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${default}"
+                "C:/MinGW/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,7 +13,12 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64",
-            "compilerPath": "C:/MinGW/bin/gcc.exe"
+            // "compilerPath": "C:/MinGW/bin/gcc.exe"
+            "browse": {
+                "path": ["C:/MinGW/include"],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4
