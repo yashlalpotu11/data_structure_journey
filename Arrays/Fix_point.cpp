@@ -35,5 +35,6 @@ int FixPoint(int arr[], int low, int high){
 int main(){
     int arr[] = {-10, -1, 0, 3, 10, 11, 30, 50, 100};
     int n = sizeof(arr)/sizeof(arr[0]);
-    cout<<"Fixed point :"<<FixPoint(arr, 0, n-1);
+    cout<<"Fixed point : "<<FixPoint(arr, 0, n-1);
+    
 }
