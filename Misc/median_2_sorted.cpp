@@ -29,8 +29,10 @@ int getMedian(int ar1[], int ar2[], int n){
 }
 
 int main(){
+    
     int ar1[] = { 1, 12, 15, 26, 38 };
     int ar2[] = { 2, 13, 17, 30, 45 };
+
     int n1 = sizeof(ar1)/sizeof(ar1[0]);
     int n2 = sizeof(ar2)/sizeof(ar2[0]);
 
