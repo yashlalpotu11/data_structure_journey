@@ -73,7 +73,7 @@ int findPivot(int arr[], int low, int high){
     }
 
     // Find the mid element
-    int mid = (low + high)/2;
+    int mid = low + (high - low)/2;
 
     if(mid < high and arr[mid] > arr[mid+1]){
         return mid;
@@ -86,7 +86,7 @@ int findPivot(int arr[], int low, int high){
     if(arr[low] >= arr[mid]){
         return findPivot(arr, low, mid-1);
     }
-
+    
     return findPivot(arr, mid+1, high);
 }
 
