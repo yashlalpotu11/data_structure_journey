@@ -8,7 +8,7 @@ that place.
 Input : arr = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1}
 Output : [-1, 1, 2, 3, 4, -1, 6, -1, -1, 9]
 
-Method 1 => using HashSet (Best)
+Method 1 => using Hashing (Best)
 Algorithm => Step 1) store all numbers in hashSet
                Step 2) iterate through array, if corresponding
                        position element is present in hashset
