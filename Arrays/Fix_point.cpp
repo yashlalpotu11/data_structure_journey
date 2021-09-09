@@ -38,3 +38,7 @@ int main(){
     cout<<"Fixed point : "<<FixPoint(arr, 0, n-1);
     
 }
+/*
+Time complexity: O(logn)
+Space complexity: O(1)
+*/
