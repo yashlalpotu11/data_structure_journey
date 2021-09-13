@@ -7,5 +7,4 @@ typedef long long int ll;
 
 int main(){
     
-    
 }

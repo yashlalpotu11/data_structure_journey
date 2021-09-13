@@ -1,7 +1,7 @@
 
 
 /*
-Q)Given N numbers and Q queries, each query consists of L and R. 
+Q) Given N numbers and Q queries, each query consists of L and R. 
 Task is to write a program which prints the count of numbers which 
 divides all numbers in the given range L-R.
 
@@ -19,6 +19,7 @@ numbers in this range.
 The range 2-6 has {4, 2, 2, 4, 6} which has  2 numbers {2, 2} which divides 
 all numbers in the given range. 
 */
+
 #include<bits/stdc++.h>
 using namespace std;
 const int m = 1e9+7;
