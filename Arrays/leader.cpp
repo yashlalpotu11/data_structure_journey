@@ -14,10 +14,12 @@ using namespace std;
 const int m = 1e9+7;
 typedef long long int ll;
 void leader(int a[], int n){
+
     int max_from_right = a[n-1]; 
 
     //rightmost element is always a leader
     cout<<max_from_right<<" ";
+
     for(int i=n-2; i>=0; i--){
         if(a[i] > max_from_right){
             max_from_right = a[i];
@@ -30,3 +32,5 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     leader(arr,n);
 }
+
+//Time complexity : O(n)

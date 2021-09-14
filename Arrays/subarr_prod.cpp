@@ -43,3 +43,5 @@ int main(){
     int k = 3;
     cout<<maxProd(arr, n, k);
 }
+
+//Time complexity : O(n)
