@@ -51,3 +51,5 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
+
+//Time complexity : O(n)
