@@ -47,3 +47,5 @@ int main(){
 
     cout<<"Common Elements : "<<find(a1,a2,a3,n1,n2,n3);
 }
+
+//time = O(n1+n2+n3)
