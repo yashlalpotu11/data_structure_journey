@@ -40,3 +40,5 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<findMaxSum(arr,n)<<endl;
 }
+
+//Time Complexity: O(n)
