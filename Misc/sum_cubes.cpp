@@ -31,3 +31,5 @@ int main(){
         }
     }
 }
+
+//Time complexity : O(n)

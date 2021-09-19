@@ -18,5 +18,5 @@ int main(){
         num1 = num2;
         num2 = next_num;
     }
-    cout<<sum;
+    cout<<sum<<endl;
 }
