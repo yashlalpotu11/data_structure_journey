@@ -1,4 +1,5 @@
 
+/* Sliding window technique */
 /*
 Q)Given an array consisting of n positive integers, 
 and an integer k. Find the largest product subarray 
