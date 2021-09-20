@@ -37,3 +37,4 @@ int main(){
 
     check(s) ? cout<<"YES" : cout<<"NO";
 }
+//Time Complexity: O(1)
