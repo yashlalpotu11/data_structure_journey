@@ -53,3 +53,5 @@ int main(){
     string s = "#YasKs01nOr@YasK07";
     countChar(s);
 }
+
+//Time Complexity: O(n)
