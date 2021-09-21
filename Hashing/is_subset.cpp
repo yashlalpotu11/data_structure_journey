@@ -110,3 +110,5 @@ int main(){
     else
         printf("arr2[] is not a subset of arr1[] ");
 }
+
+// Time Complexity: O(mLogm + nLogn)
