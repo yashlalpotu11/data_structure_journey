@@ -57,3 +57,5 @@ void reverse(int arr[], int start, int end){
     reverse(arr, start+1, end-1);
 }
 */
+
+//Recursive approach req more space

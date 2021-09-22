@@ -83,3 +83,5 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<mostFreq(arr, n);
 }
+
+//Time Complexity : O(n)
