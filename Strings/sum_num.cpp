@@ -54,3 +54,5 @@ int main(){
 
     cout<<findSum(s);
 }   
+
+//Time complexity : O(n)
