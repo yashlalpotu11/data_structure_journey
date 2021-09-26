@@ -1,6 +1,6 @@
 
 /*
-Given the binary tree and you have to find out the n-th node of inorder traversal.
+Lowest Common Ancestor in a Binary Search Tree.
 */
 
 #include <bits/stdc++.h>
@@ -12,26 +12,22 @@ struct Node
     Node *left, *right;
 };
 
-void nthNode(Node *root, int n){
+Node *lca(Node *root, int n1, int n2){
+    if(root==NULL) return NULL;
 
-    static int cnt = 0;
-
-    if(root == NULL){
-        return;
+    // If both n1 and n2 are smaller
+    // than root, then LCA lies in left
+    if(root->data > n1 && root->data > n2){
+        return lca(root->left, n1, n2);
     }
 
-    if(cnt <= n){
-        //first recur on left child
-        nthNode(root->left, n);
-        cnt++;
-
-        //when cnt==n, print the data of node
-        if(cnt == n){
-            cout << root->data << endl;
-        }
-        //now recur on right child
-        nthNode(root->right, n);
+    // If both n1 and n2 are greater
+    // than root, then LCA lies in right
+    if(root->data < n1 && root->data < n2){
+        retrun lca(root->right, n1, n2);
     }
+
+    return root;
 }
 
 Node* newNode(int data){
@@ -42,12 +38,23 @@ Node* newNode(int data){
 }
 
 int main() {
-	Node *root = newNode(1);
-    root->left = newNode(2);
-    root->right = newNode(3);
-    root->left->left = newNode(4);
-    root->left->right = newNode(5);
 
-    int n = 3;
-    nthNode(root, n);
+	Node *root = newNode(20);
+    root->left = newNode(8);
+    root->right = newNode(22);
+    root->left->left = newNode(4);
+    root->left->right = newNode(12);
+    root->left->right->left = newNode(10);
+    root->left->right->right = newNode(14);
+
+    int n1 = 10, n2 = 14;
+    Node *t = lca(root, n1, n2);
+    cout << "LCA of " << n1 << " and " << n2 << " is " << t->data<<endl;
 }
+
+/*
+Time Complexity: O(h). 
+The time Complexity of the above solution is O(h), where h is the height of the tree.
+Space Complexity: O(h). 
+If recursive stack space is ignored, the space complexity of the above solution is constant.
+*/
