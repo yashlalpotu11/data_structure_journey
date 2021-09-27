@@ -67,3 +67,5 @@ int main() {
 
     inOrder(root);
 }
+
+//Time Complexity: O(n)
