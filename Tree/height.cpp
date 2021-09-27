@@ -48,3 +48,5 @@ int main() {
 
     cout<<"Height of tree : "<<maxHeight(root)<<endl;
 }
+
+//Time Complexity: O(n)
