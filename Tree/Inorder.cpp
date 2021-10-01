@@ -1,5 +1,5 @@
 
-/* Using stack (wwithout recursion) */
+/* Using stack (without recursion) */
 
 /*
 Approach:
