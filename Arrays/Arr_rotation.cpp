@@ -48,3 +48,4 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
+//Time Complexity = O(n*d)
