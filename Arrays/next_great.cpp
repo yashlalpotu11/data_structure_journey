@@ -39,5 +39,5 @@ int main(){
     find(arr,n);
 
 }
-
+//Time Complexity: O(n^2)
 
