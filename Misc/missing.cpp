@@ -30,8 +30,8 @@ int main(){
 
 /*
 Complexity Analysis: 
---Time Complexity: O(n). 
+    Time Complexity: O(n). 
 Only one traversal of the array is needed.
---Space Complexity:O(1). 
-No extra space is needed
+    Space Complexity:O(1). 
+No extra space is needed 
 */
