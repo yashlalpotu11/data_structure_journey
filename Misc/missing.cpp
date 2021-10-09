@@ -7,8 +7,9 @@ the missing integer.
 Input: arr[] = {1, 2, 4, 6, 3, 7, 8}
 Output: 5
 Explanation: The missing number from 1 to 8 is 5
+
+This method avoid integer overflow
 */
-//This method avoid integer overflow
 
 #include<bits/stdc++.h>
 using namespace std;
