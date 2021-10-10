@@ -64,3 +64,4 @@ int main() {
     //print all root-to-leaf paths
     printPaths(root);
 }
+// Time Complexity: O(n)
