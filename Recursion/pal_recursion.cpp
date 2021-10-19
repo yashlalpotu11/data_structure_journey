@@ -4,6 +4,9 @@ Q) Check if string is palindrome or not(using recursion)
 
 input : abcba
 output : YES
+
+input : abc
+output : NO
 */
 
 #include<bits/stdc++.h>
