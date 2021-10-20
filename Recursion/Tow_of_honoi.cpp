@@ -41,3 +41,5 @@ int main()
     towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
     return 0;
 }
+
+//Time Complexity : O(2^n)
