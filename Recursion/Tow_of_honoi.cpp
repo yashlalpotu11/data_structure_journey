@@ -37,9 +37,10 @@ void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod){
 }
 int main()
 {
-    int n = 4; // Number of disks
+    int n = 4; // Number of disks we have
     towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
     return 0;
 }
 
 //Time Complexity : O(2^n)
+//Space Complexity : O(n)
