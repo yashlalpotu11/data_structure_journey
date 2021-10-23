@@ -36,7 +36,8 @@ char findExtraCharcter(string s1, string s2){
         if(it.second == 1){
             return it.first;
         }
-    }return -1;
+    }
+    return -1;
 }
 int main(){
     string strA = "abcd";
