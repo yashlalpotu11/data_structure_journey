@@ -21,7 +21,7 @@ typedef long long int ll;
 
 bool check(string s){
     int n = s.length();
-
+    
     if(n == 1){
         return ((s[0] - '0')%4 == 0);
     }
