@@ -27,3 +27,4 @@ int main(){
     int n; cin >> n;
     cout<<solve(n);
 }
+// Time Complexity: O(n)
