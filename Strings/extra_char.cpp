@@ -10,7 +10,7 @@ Output : e
 string B contain all the element 
 there is a one extra character which is e
 
-Method 1) Hashmap
+Method 1) Hashmap (Efficient)
 Algorithm : Create an empty hash table and insert all character of 
             second string. Now remove all characters of first string. 
             Remaining character is the extra character 
