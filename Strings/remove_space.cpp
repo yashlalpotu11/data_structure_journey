@@ -2,7 +2,7 @@
 /*
 Q) C++ Program to remove spaces from a string
 
-input : "ya  s    h"
+input : "ya  s  h"
 output : "yash"
 */
 
