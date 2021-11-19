@@ -34,3 +34,5 @@ int main() {
 
     cout<<"Size of tree : "<<size(root)<<endl;
 }
+
+//Time complexity : O(n)
